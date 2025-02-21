@@ -1,0 +1,34 @@
+[MAIN]
+
+VELKOMMEN TIL ARNES' PORTFOLIO
+
+Hej, jeg hedder Arne Nougatgren og jeg er musikalsk socialpædagog og rytmeterapeut, med en særlig forkærlighed for psykedelisk jazz-funk, -i daglig tale: psyzzunk. Jeg arbejder hårdt på at skabe bevidsthed om de pædagogiske muligheder der kan skabes i det psyzzunkiske rum.
+
+Det burde være indlysende for enhver, men fakta er at kendskabet til psyzzunkens pædagoiske perspektiver er enormt begrænset, i dagens Danmark, om man så må sige.
+
+
+[ASIDE]
+
+CSS FLEXBOX
+Denne svedige side er bygget op med flexbox modellen. Så slipper man for at bruge floats/ clear, inline-block, display:table eller andre nederen hacks.
+
+BROWSER SUPPORT:
+Flexbox modellen er efterhånden rigtig godt understøttet i alle moderne browsere.
+
+HVORDAN GØR MAN, ARNE?
+Jo... For at få sine elementer til at tilpasse sig flexbox modellen, skal man altså lige gide give deres umidelbare forældre-element display-proprtien flex
+
+
+[FOOTER]
+
+Arnes Portfolio
+Paradisæblevej 13
+1313 Andeby
+
+SoMe
+Instagram
+FaceBook
+
+Kontakt mig
+E-mail: info@arneNougatgreen.ru
+Telefon: 555-555-555

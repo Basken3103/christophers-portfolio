@@ -1,0 +1,205 @@
+/* Farver
+Rød: #b10000
+Beige: #fff2d8 */
+
+/* Resets */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img,
+svg,
+video {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+/* ---------------------- */
+
+/* Variabler */
+
+:root {
+    --primary-color: #A52A2A;
+    --secondary-color: #191970;
+    --higlight-color: #fff;
+}
+
+/* -------------------------- */
+
+/* LAYOUT */
+
+.center-max {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header {
+    background: var(--secondary-color);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    display: block;
+    padding: 10px 0;
+}
+
+.search {
+    padding: 10px 0;
+    display: flex;
+}
+
+.menu-container {
+    background: var(--primary-color);
+    padding: 5px 0;
+}
+
+.main {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 15px 25px;
+}
+
+.footer {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.footer a {
+    color: var(--primary-color);
+}
+
+.footer-inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* TYPOGRAFI */
+body {
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.menu-item {
+    font-family: "Ranchers", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+
+
+/* Search inputs */
+.search-btn {
+    background: var(--primary-color);
+    box-sizing: content-box;
+    padding: 4px;
+}
+
+/* --------------------- */
+
+/* Main Menu */
+.hidden-on-mobile {
+    display: none;
+}
+
+.burger {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.menu-item {
+    color: var(--higlight-color);
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+.menu-item:hover {
+    color: var(--secondary-color);
+}
+
+/* --------------------- */
+/* Kontakt form */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.field {
+    padding: 10px 0;
+}
+
+.contact-form input[type="submit"] {
+    background: var(--primary-color);
+    color: var(--higlight-color);
+    font-family: "Ranchers", serif;
+    border: none;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 800px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: space-between;
+    }
+
+
+    .flex-desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .main-menu {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    .menu-item {
+        margin: 0;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .article {
+        min-width: 66.7%;
+    }
+}
