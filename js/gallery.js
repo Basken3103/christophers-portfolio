@@ -1,11 +1,14 @@
 let dialog = document.getElementById("dialog")
+let dialogContent = document.getElementById("dialog-content")
 
-function modal(image) {
-
+function modal(li) {
+    let hiddenContent = li.querySelector(".modal-content")
+    dialogContent.innerHTML = hiddenContent.innerHTML
     dialog.showModal()
-    document.getElementById("dialog-img").src = image.src
+
 }
 
 function closeDialog() {
     dialog.close()
+    dialogContent.innerHTML = " "
 }

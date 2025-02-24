@@ -38,18 +38,81 @@
 
     <main class="main center-max flex-desktop">
         <article class="article">
-            <div class="photo-grid">
-                <img src="img/1.jpg" alt="To elefanter" onclick="modal(this)">
-                <img src="img/2.jpg" alt="En ræv" onclick="modal(this)">
-                <img src="img/3.jpg" alt="En løve" onclick="modal(this)">
-                <img src="img/4.jpg" alt="En gorilla" onclick="modal(this)">
-                <img src="img/5.jpg" alt="To flodheste" onclick="modal(this)">
-                <img src="img/6.jpg" alt="En tiger" onclick="modal(this)">
-            </div>
+            <ul class="photo-grid">
+
+
+                <li onclick="modal(this)">
+                    <img src="img/1.jpg" alt="To elefanter">
+                    <div class="modal-content">
+                        <h3>Overskrift</h3>
+                        <img src="img/1.jpg" alt=" ">
+                        <p>
+                            <a href="#">Læs mere</a>
+                        </p>
+                    </div>
+                </li>
+
+                <li onclick="modal(this)">
+                    <img src="img/2.jpg" alt="En ræv">
+                    <div class="modal-content">
+                        <h3>Overskrift</h3>
+                        <img src="img/2.jpg" alt=" ">
+                        <p>
+                            <a href="#">Læs mere</a>
+                        </p>
+                    </div>
+                </li>
+
+                <li onclick="modal(this)">
+                    <img src="img/3.jpg" alt="En løve">
+                    <div class="modal-content">
+                        <h3>Overskrift</h3>
+                        <img src="img/3.jpg" alt=" ">
+                        <p>
+                            <a href="#">Læs mere</a>
+                        </p>
+                    </div>
+                </li>
+
+                <li onclick="modal(this)">
+                    <img src="img/4.jpg" alt="En gorilla">
+                    <div class="modal-content">
+                        <h3>Overskrift</h3>
+                        <img src="img/4.jpg" alt=" ">
+                        <p>
+                            <a href="#">Læs mere</a>
+                        </p>
+                    </div>
+                </li>
+
+                <li onclick="modal(this)">
+                    <img src="img/5.jpg" alt="To flodheste">
+                    <div class="modal-content">
+                        <h3>Overskrift</h3>
+                        <img src="img/5.jpg" alt=" ">
+                        <p>
+                            <a href="#">Læs mere</a>
+                        </p>
+                    </div>
+                </li>
+
+                <li onclick="modal(this)">
+                    <img src="img/6.jpg" alt="En tiger">
+                    <div class="modal-content">
+                        <h3>Overskrift</h3>
+                        <img src="img/6.jpg" alt=" ">
+                        <p>
+                            <a href="#">Læs mere</a>
+                        </p>
+                    </div>
+                </li>
+
+
+            </ul>
             <dialog class="dialag" id="dialog">
                 <button id="close-dialog" onclick="closeDialog()">Luk</button>
                 <figure>
-                    <img src="" alt="" id="dialog-img">
+                    <div id="dialog-content">
                 </figure>
             </dialog>
 
