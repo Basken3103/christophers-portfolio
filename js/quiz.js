@@ -1,6 +1,5 @@
-.answer {
-    cursor: pointer;
-}
-.quiz - article{
-    display: flex;
-}
+//.answer {
+//    cursor: pointer;
+//}
+//.quiz - article{
+//    display: flex;

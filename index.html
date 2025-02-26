@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/slider.css">
     <script src="js/burger.js" defer></script>
     <script src="js/quiz.js" defer></script>
+    <script src="js/slider.js" defer></script>
 </head>
 
 <body>
@@ -77,10 +79,45 @@
             </nav>
         </div>
     </header>
+    <!-- SLIDESHOW -->
+    <div class="slider-container">
+        <figure class="slide fade">
+            <img src="img/slides/img1.jpg" alt="Et fint billede af nordlys">
+            <h2 class="hero-heading">
+                Et fint billede af nordlys
+            </h2>
+        </figure>
+
+        <figure class="slide fade">
+            <img src="img/slides/img2.jpg" alt="Et fint billede af en alpetop">
+            <h2 class="hero-heading">
+                Et fint billede af en alpetop
+            </h2>
+        </figure>
+
+        <figure class="slide fade">
+            <img src="img/slides/img3.jpg" alt="Efterår over nålesskoven">
+            <h2 class="hero-heading">
+                Efterår over nålesskoven
+            </h2>
+        </figure>
+
+        <figure class="slide fade">
+            <img src="img/slides/img4.jpg" alt="En ensom bjergvej">
+            <h2 class="hero-heading">
+                En ensom bjergvej
+            </h2>
+        </figure>
+        <a class="prev" title="Forrige billede" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" title="Næste billede" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+
+
 
     <main class="main center-max flex-desktop">
         <article class="article quiz-article">
-
+            <h1>VELKOMMEN TIL CHRISTOPHERS' PORTFOLIO</h1>
 
 
             <p>
@@ -97,10 +134,11 @@
             </figure>
         </article>
         <aside class="aside">
-            <h2>CSS FLEXBOX</h2>
+            <h2>MINE PROJEKTER</h2>
             <p>
-                Denne svedige side er bygget op med flexbox modellen. Så slipper man for at bruge floats/ clear,
-                inline-block, display:table eller andre nederen hacks.
+                Dette link tager dig med til Github, hvor at du kan få et overblik over de ting jeg har lavet igennem
+                tiden.
+                <a href="https://github.com/Basken3103?tab=repositories"></a>
             </p>
             <h2>BROWSER SUPPORT:</h2>
             <p>
