@@ -45,6 +45,31 @@
     right: 0;
 }
 
+.dots {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding-top: 16px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.dot:hover,
+.slide-active {
+    background-color: #777;
+}
+
+
+
 @keyframes fade {
     from {
         opacity: 0.4;
