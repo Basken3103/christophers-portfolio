@@ -89,6 +89,7 @@ figure {
 /* TYPOGRAFI */
 body {
     font-family: sans-serif;
+
 }
 
 h1,
@@ -98,10 +99,11 @@ h4,
 h5,
 h6,
 .menu-item {
-    font-family: "Ranchers", serif;
-    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 750;
     font-style: normal;
     text-transform: uppercase;
+
 }
 
 
