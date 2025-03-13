@@ -216,3 +216,9 @@ h6,
         min-width: 66.7%;
     }
 }
+
+
+/* Hide honeypot field */
+.hidden {
+    display: none;
+}

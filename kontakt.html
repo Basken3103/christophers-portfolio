@@ -88,25 +88,24 @@
     <main class="main center-max flex-desktop">
         <article class="article article-form">
             <h1>Udfyld kontaktformularen her under</h1>
-            <form action="tak.html" class="contact-form">
-                <div class="field">
-                    <input type="text" name="firstName" placeholder="Fornavn(e)" required>
-                </div>
-                <div class="field">
-                    <input type="text" name="lastName" placeholder="Efternavn(e)" required>
-                </div>
-                <div class="field">
-                    <input type="email" name="email" placeholder="Din E-mail" required>
-                </div>
-                <div class="field">
-                    <textarea name="message" placeholder="Skriv en besked" required></textarea>
-                </div>
-                <div class="field">
-                    <input type="submit" value="Send Besked">
-                </div>
+            <form action="/tak" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"><input
+                    type="hidden" name="form-name" value="contact">
+                <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
+                <div class="input-box"><label for="name">Navn</label><input type="text" id="name" name="name"
+                        placeholder="Enter your name" required></div>
+                <div class="input-box"><label for="email">Email</label><input type="email" id="email" name="email"
+                        placeholder="Enter your email" required></div>
+                <div class="input-box"><label for="message">Besked</label><textarea id="message" name="message"
+                        placeholder="Enter your message" required></textarea></div>
+                <div class="button"><input type="submit" value="Send"></div>
             </form>
         </article>
         <aside class="aside">
+
+
+
+
+
 
         </aside>
     </main>
