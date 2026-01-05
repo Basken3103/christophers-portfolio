@@ -117,7 +117,7 @@ h6,
 .search-btn {
     background: var(--primary-color);
     box-sizing: content-box;
-    padding: 4px;
+    padding: 8px;
 }
 
 /* --------------------- */
