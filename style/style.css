@@ -215,6 +215,10 @@ h6,
     .article {
         min-width: 66.7%;
     }
+
+    .main.flex-desktop {
+        align-items: baseline;
+    }
 }
 
 
