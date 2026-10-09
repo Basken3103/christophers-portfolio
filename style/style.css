@@ -108,10 +108,7 @@ h6,
     font-weight: 750;
     font-style: normal;
     text-transform: uppercase;
-
 }
-
-
 
 /* Search inputs */
 .search-btn {
@@ -219,6 +216,29 @@ h6,
     .main.flex-desktop {
         align-items: baseline;
     }
+
+    @media screen and (max-width: 500px) {
+        .hobby-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+        .btn-submit,
+        .btn-submit::after {
+            transition: none;
+        }
+
+        @media screen and (max-width: 700px) {
+            .article-form .container {
+                width: 100%;
+            }
+        }
+
+    }
+
+
 }
 
 
@@ -226,6 +246,8 @@ h6,
 .hidden {
     display: none;
 }
+
+/* Technology styling*/
 
 .tech-list {
     list-style: none;
@@ -276,4 +298,175 @@ h6,
 .tech-item:hover img {
     filter: none;
     opacity: 1;
+}
+
+/* Hobbyer */
+.hobby-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.hobby img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.hobby:hover img {
+    transform: scale(1.04);
+}
+
+
+/* Github logo*/
+
+.github-logo {
+    display: block;
+    margin-top: 5rem;
+    margin-left: 12px;
+}
+
+/* Kontaktformular */
+.article-form .container {
+    max-width: 600px;
+}
+
+.form-intro {
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+    flex: 1;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    background: #fff;
+    border: 2px solid #e2e2e2;
+    border-radius: 10px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    margin-top: 15px;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 4px rgba(25, 25, 112, 0.15);
+}
+
+textarea.form-control {
+    min-height: 150px;
+    margin-top: 10px;
+}
+
+/* Send-knap */
+.btn-submit {
+    position: relative;
+    overflow: hidden;
+    appearance: none;
+    padding: 0.9rem 2.8rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(135deg, #2b5cff 0%, #191970 100%);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(43, 92, 255, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.btn-submit::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-20deg);
+    pointer-events: none;
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+    box-shadow: 0 10px 28px rgba(43, 92, 255, 0.5);
+}
+
+.btn-submit:hover::after {
+    left: 125%;
+    transition: left 0.7s ease;
+}
+
+.btn-submit:active {
+    transform: translateY(0) scale(0.97);
+    box-shadow: 0 3px 10px rgba(43, 92, 255, 0.4);
+}
+
+.btn-submit:focus-visible {
+    outline: 3px solid #2b5cff;
+    outline-offset: 3px;
+}
+
+.btn-submit {
+    width: auto;
+    align-self: flex-start;
+    padding: 0.8rem 2.5rem;
+}
+
+/* Kontakt formular - input felter*/
+
+.article-form {
+    flex: 1;
+}
+
+.article-form .container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.article-form .container {
+    width: 600px;
 }
